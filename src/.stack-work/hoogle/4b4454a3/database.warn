@@ -1,0 +1,174 @@
+attoparsec:80:failed to parse:     type ChunkElem c;
+attoparsec:81:failed to parse: }
+base-compat:505:failed to parse: gcoerceWith :: forall {k} (a :: k) (b :: k) r. Coercion a b -> (Coercible a b => r) -> r
+base-compat-batteries:458:failed to parse: Refl :: forall {k} (a :: k). a :~: a
+base-compat-batteries:459:failed to parse: class a ~# b => (a :: k0) ~~ (b :: k1)
+base-compat-batteries:461:failed to parse: HRefl :: forall {k1} (a :: k1). a :~~: a
+base-compat-batteries:462:failed to parse: sym :: forall {k} (a :: k) (b :: k). (a :~: b) -> b :~: a
+base-compat-batteries:463:failed to parse: trans :: forall {k} (a :: k) (b :: k) (c :: k). (a :~: b) -> (b :~: c) -> a :~: c
+base-compat-batteries:465:failed to parse: gcastWith :: forall {k} (a :: k) (b :: k) r. (a :~: b) -> (a ~ b => r) -> r
+base-compat-batteries:466:failed to parse: apply :: forall {k1} {k2} (f :: k1 -> k2) (g :: k1 -> k2) (a :: k1) (b :: k1). (f :~: g) -> (a :~: b) -> f a :~: g b
+base-compat-batteries:467:failed to parse: inner :: forall {k1} {k2} (f :: k1 -> k2) (a :: k1) (g :: k1 -> k2) (b :: k1). (f a :~: g b) -> a :~: b
+base-compat-batteries:468:failed to parse: outer :: forall {k1} {k2} (f :: k1 -> k2) (a :: k1) (g :: k1 -> k2) (b :: k1). (f a :~: g b) -> f :~: g
+basement:94:failed to parse: type HasCallStack = ?callStack :: CallStack
+basement:109:failed to parse: }
+basement:336:failed to parse: seq :: forall {r :: RuntimeRep} a (b :: TYPE r). a -> b -> b
+basement:424:failed to parse: }
+basement:572:failed to parse:     -- | type of state token associated with the PrimMonad m
+basement:573:failed to parse:     type PrimState m;
+basement:575:failed to parse:     -- | type of variable associated with the PrimMonad m
+basement:576:failed to parse:     type PrimVar m :: * -> *;
+basement:577:failed to parse: }
+basement:604:failed to parse:     -- | The associated type with the MonadFailure, representing what failure
+basement:605:failed to parse:     --   can be encoded in this monad
+basement:606:failed to parse:     type Failure m;
+basement:607:failed to parse: }
+basement:1014:failed to parse: type (x :: t) <= (y :: t) = Assert x <=? y LeErrMsg x y :: Constraint
+basement:1110:failed to parse:     type Difference a;
+basement:1111:failed to parse: }
+basement:1473:failed to parse:     -- | type level size of the given <tt>ty</tt>
+basement:1474:failed to parse:     type PrimSize ty :: Nat;
+basement:1475:failed to parse: }
+basement:1801:failed to parse: uncons :: 1 <= n => ListN n a -> (a, ListN (n - 1) a)
+basement:1807:failed to parse: unsnoc :: 1 <= n => ListN n a -> (ListN (n - 1) a, a)
+basement:1844:failed to parse: foldl1' :: 1 <= n => (a -> a -> a) -> ListN n a -> a
+basement:1867:failed to parse: foldr1 :: 1 <= n => (a -> a -> a) -> ListN n a -> a
+basement:1882:failed to parse: head :: 1 <= n => ListN n a -> a
+basement:1885:failed to parse: tail :: 1 <= n => ListN n a -> ListN (n - 1) a
+basement:1888:failed to parse: init :: 1 <= n => ListN n a -> ListN (n - 1) a
+basement:2808:failed to parse:     -- | type level size of the given <tt>ty</tt>
+basement:2809:failed to parse:     type PrimSize ty :: Nat;
+basement:2810:failed to parse: }
+basement:3200:failed to parse: seq :: forall {r :: RuntimeRep} a (b :: TYPE r). a -> b -> b
+basement:3345:failed to parse: }
+basement:3353:failed to parse: }
+blaze-html:12027:failed to parse: pattern :: AttributeValue -> Attribute
+blaze-html:24591:failed to parse: pattern :: AttributeValue -> Attribute
+conduit:3755:failed to parse:     -- | State token type.
+conduit:3757:failed to parse: }
+cryptonite:125:failed to parse:     -- | Associated type for the block size of the hash algorithm
+cryptonite:126:failed to parse:     type HashBlockSize a :: Nat;
+cryptonite:128:failed to parse:     -- | Associated type for the digest size of the hash algorithm
+cryptonite:129:failed to parse:     type HashDigestSize a :: Nat;
+cryptonite:131:failed to parse:     -- | Associated type for the internal context size of the hash algorithm
+cryptonite:132:failed to parse:     type HashInternalContextSize a :: Nat;
+cryptonite:133:failed to parse: }
+cryptonite:1098:failed to parse: type PRF password = -- | the password parameters password -> -- | the content Bytes -> -- | prf(password,content) Bytes
+cryptonite:1865:failed to parse: type MaskGenAlgorithm seed output = -- | seed seed -> -- | length to generate Int -> output
+cryptonite:3733:failed to parse:     -- | Point on an Elliptic Curve
+cryptonite:3734:failed to parse:     type Point curve :: Type;
+cryptonite:3736:failed to parse:     -- | Scalar in the Elliptic Curve domain
+cryptonite:3737:failed to parse:     type Scalar curve :: Type;
+cryptonite:3738:failed to parse: }
+cryptonite:3885:failed to parse:     -- | Size of the digest for this curve (in bytes)
+cryptonite:3886:failed to parse:     type CurveDigestSize curve :: Nat;
+cryptonite:3887:failed to parse: }
+foundation:191:failed to parse:     type State m;
+foundation:192:failed to parse: }
+foundation:217:failed to parse:     type ReaderContext m;
+foundation:218:failed to parse: }
+foundation:304:failed to parse: }
+foundation:409:failed to parse:     -- | The associated type with the MonadFailure, representing what failure
+foundation:410:failed to parse:     --   can be encoded in this monad
+foundation:412:failed to parse: }
+foundation:796:failed to parse:     type MutableFreezed c;
+foundation:797:failed to parse:     type MutableKey c;
+foundation:798:failed to parse:     type MutableValue c;
+foundation:799:failed to parse: }
+foundation:817:failed to parse:     type Key c;
+foundation:818:failed to parse:     type Value c;
+foundation:819:failed to parse: }
+foundation:855:failed to parse:     -- | Mutable collection type used for incrementally writing chunks.
+foundation:856:failed to parse:     type Mutable col :: Type -> Type;
+foundation:858:failed to parse:     -- | Unit of the smallest step possible in an <a>append</a> operation.
+foundation:859:failed to parse:     --   
+foundation:860:failed to parse:     --   A UTF-8 character can have a size between 1 and 4 bytes, so this
+foundation:861:failed to parse:     --   should be defined as 1 byte for collections of <a>Char</a>.
+foundation:862:failed to parse:     type Step col;
+foundation:863:failed to parse: }
+foundation:1056:failed to parse:     -- | type level size of the given <tt>ty</tt>
+foundation:1058:failed to parse: }
+foundation:1091:failed to parse:     -- | type of state token associated with the PrimMonad m
+foundation:1094:failed to parse:     -- | type of variable associated with the PrimMonad m
+foundation:1096:failed to parse: }
+foundation:1454:failed to parse:     type Chunk input;
+foundation:1455:failed to parse: }
+foundation:2069:failed to parse:     type ProductFirst a;
+foundation:2070:failed to parse: }
+foundation:2075:failed to parse:     type ProductSecond a;
+foundation:2076:failed to parse: }
+foundation:2081:failed to parse:     type ProductThird a;
+foundation:2082:failed to parse: }
+foundation:2108:failed to parse: seq :: forall {r :: RuntimeRep} a (b :: TYPE r). a -> b -> b
+foundation:2184:failed to parse: }
+foundation:2234:failed to parse: }
+foundation:2645:failed to parse:     type NthTy n a;
+foundation:2646:failed to parse: }
+foundation:2700:failed to parse:     -- | the associated PathEntity of the given <tt>path</tt> this type is the
+foundation:2701:failed to parse:     --   minimal element contained in the Path a Path is not a collection but
+foundation:2702:failed to parse:     --   it is possible to see this associated type equivalent to the
+foundation:2703:failed to parse:     --   <a>Element</a> type family
+foundation:2704:failed to parse:     type PathEnt path;
+foundation:2706:failed to parse:     -- | the associated prefix of the given <tt>path</tt>
+foundation:2707:failed to parse:     --   
+foundation:2708:failed to parse:     --   in the case of a <a>FilePath</a>, it is a void (i.e. <tt>()</tt>) in
+foundation:2709:failed to parse:     --   the case of a <a>URI</a>, it is the schema, host, port...
+foundation:2710:failed to parse:     type PathPrefix path;
+foundation:2712:failed to parse:     -- | the associated suffix of the given path
+foundation:2713:failed to parse:     --   
+foundation:2714:failed to parse:     --   in the case of the <a>FilePath</a>, it is a void (i.e. <tt>()</tt>) in
+foundation:2715:failed to parse:     --   the case of the <a>URI</a>, it is a the query, the fragment
+foundation:2716:failed to parse:     type PathSuffix path;
+foundation:2717:failed to parse: }
+foundation:2912:failed to parse:     -- | the associated PathEntity of the given <tt>path</tt> this type is the
+foundation:2913:failed to parse:     --   minimal element contained in the Path a Path is not a collection but
+foundation:2914:failed to parse:     --   it is possible to see this associated type equivalent to the
+foundation:2915:failed to parse:     --   <a>Element</a> type family
+foundation:2916:failed to parse:     type PathEnt path;
+foundation:2918:failed to parse:     -- | the associated prefix of the given <tt>path</tt>
+foundation:2919:failed to parse:     --   
+foundation:2920:failed to parse:     --   in the case of a <a>FilePath</a>, it is a void (i.e. <tt>()</tt>) in
+foundation:2921:failed to parse:     --   the case of a <a>URI</a>, it is the schema, host, port...
+foundation:2922:failed to parse:     type PathPrefix path;
+foundation:2924:failed to parse:     -- | the associated suffix of the given path
+foundation:2925:failed to parse:     --   
+foundation:2926:failed to parse:     --   in the case of the <a>FilePath</a>, it is a void (i.e. <tt>()</tt>) in
+foundation:2927:failed to parse:     --   the case of the <a>URI</a>, it is a the query, the fragment
+foundation:2928:failed to parse:     type PathSuffix path;
+foundation:2929:failed to parse: }
+generically:24:failed to parse: Generically1 :: forall {k} (f :: k -> Type) (a :: k). f a -> Generically1 f a
+mono-traversable:648:failed to parse:     -- | The type of the key
+mono-traversable:649:failed to parse:     type ContainerKey set;
+mono-traversable:650:failed to parse: }
+mono-traversable:690:failed to parse:     type BPMKeyConstraint map key :: Constraint;
+mono-traversable:691:failed to parse: }
+mono-traversable:697:failed to parse:     -- | In some cases, <a>MapValue</a> and <a>Element</a> will be different,
+mono-traversable:698:failed to parse:     --   e.g., the <a>IsMap</a> instance of associated lists.
+mono-traversable:699:failed to parse:     type MapValue map;
+mono-traversable:700:failed to parse: }
+mono-traversable:851:failed to parse:     -- | Type of the key set.
+mono-traversable:852:failed to parse:     type KeySet set;
+mono-traversable:853:failed to parse: }
+mono-traversable:1014:failed to parse:     -- | The type of the index of a sequence.
+mono-traversable:1015:failed to parse:     type Index seq;
+mono-traversable:1016:failed to parse: }
+primitive:18:failed to parse:     -- | State token type.
+primitive:19:failed to parse:     type PrimState m;
+primitive:20:failed to parse: }
+random:546:failed to parse:     -- | Represents the state of the pseudo-random number generator for use
+random:547:failed to parse:     --   with <a>thawGen</a> and <a>freezeGen</a>.
+random:548:failed to parse:     type MutableGen f m = (g :: Type) | g -> f;
+random:549:failed to parse: }
+th-compat:144:failed to parse: type CodeQ = Code Q :: TYPE r -> Type
+th-compat:205:failed to parse: type Splice = Code :: (forall r. (* -> *) -> TYPE r -> *)
+th-compat:224:failed to parse: type SpliceQ = Splice Q :: (TYPE r -> *)
+transformers-compat:84:failed to parse: class (forall a. Eq a => GEq (t a)) => GEq1 v t
+transformers-compat:107:failed to parse: class (GEq1 v t, forall a. Ord a => GOrd (t a)) => GOrd1 v t
+transformers-compat:130:failed to parse: class (forall a. Read a => GRead (f a)) => GRead1 v f
+transformers-compat:136:failed to parse: class (forall a. Read a => GReadCon (f a)) => GRead1Con v f
+transformers-compat:158:failed to parse: class (forall a. Show a => GShow (f a)) => GShow1 v f
+transformers-compat:164:failed to parse: class (forall a. Show a => GShowCon (f a)) => GShow1Con v f
+typed-process:80:failed to parse: StreamSpec :: !forall b. (StdStream -> IO b) -> IO b -> !ProcessConfig () () () -> Maybe Handle -> Cleanup a -> StreamSpec (streamType :: StreamType) a
+typed-process:81:failed to parse: ssStream :: StreamSpec (streamType :: StreamType) a -> !forall b. (StdStream -> IO b) -> IO b
+x509-validation:228:failed to parse: type ValidationCacheQueryCallback = -- | connection's identification ServiceID -> -- | fingerprint of the leaf certificate Fingerprint -> -- | leaf certificate Certificate -> -- | return if the operation is succesful or not IO ValidationCacheResult
+x509-validation:231:failed to parse: type ValidationCacheAddCallback = -- | connection's identification ServiceID -> -- | fingerprint of the leaf certificate Fingerprint -> -- | leaf certificate Certificate -> IO ()
